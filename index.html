@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/server">
+
+            <h1 class="heading">Survey Form:</h1>
+            <hr>
+            <div >
+                <h3 class="field_head">Customer Name</h3>
+                <div class="customer_info">
+                    <div class="first">
+                        <div class="f_name">
+                            <input type="text" class="first_name" name="firstName">
+                        </div>
+                        <div class="f_help">
+                            Enter Your First Name
+                        </div>
+                    </div>
+                        <div class="last">
+                            <div class="l_name">
+                                <input type="text" class="last_name" name="lastName">
+                            </div>
+                            <div class="l_help">
+                                Enter Your Last Name
+                            </div>
+                        </div>
+                       </div> 
+                    </div>
+    
+                    
+                            <h3 class="field_head">Address</h3>
+                            <input type="text" class="address_1" name="streetAddress">
+                            <p class="add_help_1">Street Address</p>
+                            <input type="text" class="address_2" name="streetAddress2">
+                            <p class="add_help_2">Street Address Line 2</p>
+                           <br>
+                            
+                           <div class="address3">
+    
+                               <div class="address4">
+                                <div>
+                                    <input type="text" class="city add_help_city" name="city"><br>
+                                
+                                    &nbsp;&nbsp;&nbsp;City
+                                </div>
+                           </div>
+                           
+                           <div class="address4">
+                            <div>
+                                <input type="text" class="state" name="state"><br>
+                            
+                                &nbsp;&nbsp;&nbsp;State
+                            </div>
+                       </div>
+                       <div class="address4">
+                        <div>
+                            <input type="text" class="zip" name="zip"><br>
+                        
+                           &nbsp;&nbsp;&nbsp;zip
+                        </div>
+                   </div>
+    
+                   <div class="address4">
+                    <div>
+                        <select name="country" class="country" style="height: 2rem;  border-radius: 0.5rem;">
+                            <option  value="India" class="country" style="height: 2rem; border-radius: 0.5rem;">India</option>
+                            <option value="America" class="country" style="height: 2rem; border-radius: 0.5rem;">America</option>
+                            <option value="China" class="country" style="height: 2rem; border-radius: 0.5rem;">China</option>
+                          </select><br>      
+                       select country
+                    </div>
+               </div>
+    
+              
+                       </div>
+                       <h3 class="field_head">Contact</h3>
+                       <div class="container2">
+                            <div class="con1">
+                                 <input type="text" class="phone" name="phone">&nbsp;&nbsp;&nbsp;Phone
+                            </div>
+                            <div class="con2">
+                                <input type="email" class="email" name="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email
+                            </div>
+                       </div>
+    
+                       <h3 class="field_head">Personal Details</h3>
+                       <div class="personal">
+                        <label class="form-control" for="male">
+                            <input type="radio" name="sex" id="male" value="male" />
+                           Male
+                          </label><br>
+                          
+                          <label class="form-control" for="female">
+                            <input type="radio" name="sex" id="female" value="female"/>
+                            Female 
+                          </label><br>
+    
+                          <label class="form-control" for="other">
+                            <input type="radio" name="sex" id="other" value="other"/>
+                            Other 
+                          </label>
+                       </div>
+    
+                       <h3 class="field_head">Ratings</h3>
+                       
+                        <div class="rating1">
+                           
+    
+                               <h5>Rating1:</h5> 
+                               <div class="ratings">
+    
+                                   <label class="form-control" for="rate1">
+                                        <input type="radio" name="rating1" id="rate1" value="bad" />
+                                     <span class="rate_font">Bad</span> 
+                                      </label>
+                                      <label class="form-control" for="rate2">
+                                        <input type="radio" name="rating1" id="rate2" value="good" />
+                                       <span class="rate_font">Good</span>
+                                      </label>
+                                      <label class="form-control" for="rate3">
+                                        <input type="radio" name="rating1" id="rate3" value="excellent" />
+                                       <span class="rate_font">Excellent</span>
+                                      </label>
+                               </div>
+                           
+                        </div>
+                        <div class="rating1">
+                           
+    
+                            <h5>Rating2:</h5> 
+                            <div class="ratings">
+    
+                                <label class="form-control" for="rate4">
+                                     <input type="radio" name="rating2" id="rate4" value="bad" />
+                                  <span class="rate_font">Bad</span> 
+                                   </label>
+                                   <label class="form-control" for="rate5">
+                                     <input type="radio" name="rating2" id="rate5" value="good" />
+                                    <span class="rate_font">Good</span>
+                                   </label>
+                                   <label class="form-control" for="rate6">
+                                     <input type="radio" name="rating2" id="rate6" value="excellent" />
+                                    <span class="rate_font">Excellent</span>
+                                   </label>
+                            </div>
+                        
+                     </div>
+                     <div class="rating1">
+                           
+    
+                        <h5>Rating3:</h5> 
+                        <div class="ratings">
+    
+                            <label class="form-control" for="rate7">
+                                 <input type="radio" name="rating3" id="rate7" value="bad" />
+                              <span class="rate_font">Bad</span> 
+                               </label>
+                               <label class="form-control" for="rate8">
+                                 <input type="radio" name="rating3" id="rate8" value="good" />
+                                <span class="rate_font">Good</span>
+                               </label>
+                               <label class="form-control" for="rate9">
+                                 <input type="radio" name="rating3" id="rate9" value="excellent" />
+                                <span class="rate_font">Excellent</span>
+                               </label>
+                        </div>
+                    
+                 </div>
+                 <div class="rating1">
+                           
+    
+                    <h5>Rating4:</h5> 
+                    <div class="ratings">
+    
+                        <label class="form-control" for="rate10">
+                             <input type="radio" name="rating4" id="rate10" value="bad" />
+                          <span class="rate_font">Bad</span> 
+                           </label>
+                           <label class="form-control" for="rate11">
+                             <input type="radio" name="rating4" id="rate11" value="good" />
+                            <span class="rate_font">Good</span>
+                           </label>
+                           <label class="form-control" for="rate12">
+                             <input type="radio" name="rating4" id="rate12" value="excellent" />
+                            <span class="rate_font">Excellent</span>
+                           </label>
+                    </div>
+                
+             </div>
+             <div class="rating1">
+                           
+    
+                <h5>Rating5:</h5> 
+                <div class="ratings">
+    
+                    <label class="form-control" for="rate13">
+                         <input type="radio" name="rating5" id="rate13" value="bad" />
+                      <span class="rate_font">Bad</span> 
+                       </label>
+                       <label class="form-control" for="rate14">
+                         <input type="radio" name="rating5" id="rate14" value="good" />
+                        <span class="rate_font">Good</span>
+                       </label>
+                       <label class="form-control" for="rate15">
+                         <input type="radio" name="rating5" id="rate15" value="excellent" />
+                        <span class="rate_font">Excellent</span>
+                       </label>
+                </div>
+            
+         </div>
+         <div class="rating1">
+                           
+    
+            <h5>Rating6:</h5> 
+            <div class="ratings">
+    
+                <label class="form-control" for="rate16">
+                     <input type="radio" name="rating6" id="rate16" value="bad" />
+                  <span class="rate_font">Bad</span> 
+                   </label>
+                   <label class="form-control" for="rate17">
+                     <input type="radio" name="rating6" id="rate17" value="good" />
+                    <span class="rate_font">Good</span>
+                   </label>
+                   <label class="form-control" for="rate18">
+                     <input type="radio" name="rating6" id="rate18" value="excellent" />
+                    <span class="rate_font">Excellent</span>
+                   </label>
+            </div>
+        
+     </div>
+     <div class="rating1">
+                           
+    
+        <h5>Rating1:</h5> 
+        <div class="ratings">
+    
+            <label class="form-control" for="rate19">
+                 <input type="radio" name="rating7" id="rate19" value="bad" />
+              <span class="rate_font">Bad</span> 
+               </label>
+               <label class="form-control" for="rate20">
+                 <input type="radio" name="rating7" id="rate20" value="good" />
+                <span class="rate_font">Good</span>
+               </label>
+               <label class="form-control" for="rate21">
+                 <input type="radio" name="rating7" id="rate21" value="excellent" />
+                <span class="rate_font">Excellent</span>
+               </label>
+        </div>
+    
+    </div>
+    <button type="submit" class="btn1">Submit</button>
+                       
+                       
+                           </div>
+                           
+        </form>
+                     
+            
+                
+                
+               
+            
+   
+   
+    
+</body>
+</html>
